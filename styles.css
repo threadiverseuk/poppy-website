@@ -1,0 +1,35 @@
+.landing-page {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.landing-page h1 {
+    font-size: 2.5em;
+    color: #ff0080; /* pink */
+    background: linear-gradient(90deg, #ff0080, #800080, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 0, 128, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 0, 128, 1);
+    }
+}
+
+@media (max-width: 768px) {
+    .landing-page {
+        padding: 10px;
+    }
+    .landing-page h1 {
+        font-size: 2em;
+    }
+}
